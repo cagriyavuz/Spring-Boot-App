@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .input-label {
+    display: inline-block;
+    width: 120px;
+  }
+  
+  .input-field {
+    width: 300px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+
+<h2>Subscriber Table</h2>
+
+<form id="subscriberForm">
+  <label class="input-label" for="subscId">SUBSC_ID:</label>
+  <input class="input-field" type="number" id="subscId" name="subscId"><br><br>
+  
+  <label class="input-label" for="subscName">SUBSC_NAME:</label>
+  <input class="input-field" type="text" id="subscName" name="subscName"><br><br>
+  
+  <label class="input-label" for="subscSurname">SUBSC_SURNAME:</label>
+  <input class="input-field" type="text" id="subscSurname" name="subscSurname"><br><br>
+  
+  <label class="input-label" for="msisdn">MSISDN:</label>
+  <input class="input-field" type="text" id="msisdn" name="msisdn"><br><br>
+  
+  <label class="input-label" for="tariffId">TARIFF_ID:</label>
+  <input class="input-field" type="number" id="tariffId" name="tariffId"><br><br>
+  
+  <label class="input-label" for="startDate">START_DATE:</label>
+  <input class="input-field" type="date" id="startDate" name="startDate"><br><br>
+  
+  <input type="button" value="Submit" onclick="addRecord()">
+  <input type="button" value="Show Records" onclick="showRecord()">
+</form>
+
+
+
+<script>
+function addRecord() {
+  var subscId = document.getElementById("subscId").value;
+  var subscName = document.getElementById("subscName").value.replace(/\n/g, '<br>');
+  var subscSurname = document.getElementById("subscSurname").value.replace(/\n/g, '<br>');
+  var msisdn = document.getElementById("msisdn").value.replace(/\n/g, '<br>');
+  var tariffId = document.getElementById("tariffId").value;
+  var startDate = document.getElementById("startDate").value;
+  
+  var table = document.getElementById("recordTable");
+  var newRow = table.insertRow(-1);
+  var cells = newRow.insertCell(0);
+  cells.innerHTML = subscId;
+  cells = newRow.insertCell(1);
+  cells.innerHTML = subscName;
+  cells = newRow.insertCell(2);
+  cells.innerHTML = subscSurname;
+  cells = newRow.insertCell(3);
+  cells.innerHTML = msisdn;
+  cells = newRow.insertCell(4);
+  cells.innerHTML = tariffId;
+  cells = newRow.insertCell(5);
+  cells.innerHTML = startDate;
+}
+function showRecord() {
+	<button onclick="location.href='cigar-records.html'">Go to Cigar Records</button>
+}
+</script>
+
+</body>
+</html>

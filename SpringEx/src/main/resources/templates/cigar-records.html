@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+<h2>Subscriber Table</h2>
+<body>
+<div align="center">
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>SUBSC_ID</th>
+                <th>SUBSC_NAME</th>
+                <th>SUBSC_SURNAME</th>
+                <th>MSISDN</th>
+                <th>TARIFF_ID</th>
+                <th>START_DATE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="subscriber : ${listSubscriber}">
+            <td th:text="${subscriber.SUBSC_ID}"></td>
+                <td th:text="${subscriber.SUBSC_NAME}"></td>
+                <td th:text="${subscriber.SUBSC_SURNAME}"></td>
+                <td th:text="${subscriber.MSISDN}"></td>
+                <td th:text="${subscriber.TARIFF_ID}"></td>
+                <td th:text="${subscriber.START_DATE}"></td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>  
+</body>
+</html>
