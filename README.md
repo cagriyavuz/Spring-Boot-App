@@ -9,6 +9,6 @@ Saving data to oracle database by creating a simple form interface with Spring
 
 ![spring1](https://github.com/cagriyavuz/Spring-Boot-App/assets/101889916/54407dc1-5fa8-4af4-b9f8-dcada2a80502)
 
-![spring2](https://github.com/cagriyavuz/Spring-Boot-App/assets/101889916/ad4e81ab-b4de-431a-8e9e-efbacdb06b17)
+![sssssssssss](https://github.com/cagriyavuz/Spring-Boot-App/assets/101889916/93db7c4a-be61-48e9-87ee-69116413017b)
 
 ![springgg](https://github.com/cagriyavuz/Spring-Boot-App/assets/101889916/e0c836a8-1e43-4a4d-801e-e585eb1a21f8)
